@@ -16,6 +16,6 @@ jobs:
           git pull origin master
           curl -o cube.r https://raw.githubusercontent.com/ttimbers/r-cube-commit-source/main/cube.r
           git commit -m "Here's a fix to the file!" -a
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
