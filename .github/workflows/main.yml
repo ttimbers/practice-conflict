@@ -13,7 +13,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git pull origin master
+          git pull origin main
           curl -o cube.r https://raw.githubusercontent.com/ttimbers/r-cube-commit-source/main/cube.r
           git commit -m "Here's a fix to the file!" -a
         env:
